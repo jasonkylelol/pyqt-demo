@@ -1,7 +1,6 @@
-from PyQt5.QtWidgets import QApplication,QLineEdit,QWidget,QFormLayout
+from PyQt5.QtWidgets import QLineEdit,QWidget,QFormLayout
 from PyQt5.QtGui import QIntValidator,QDoubleValidator,QFont
 from PyQt5.QtCore import Qt
-import sys
 
 class lineEditDemo(QWidget):
         def __init__(self,parent=None):
@@ -43,9 +42,3 @@ class lineEditDemo(QWidget):
 
         def enterPress(self):
                 print("Enter pressed")
-
-if __name__ == "__main__":
-        app = QApplication(sys.argv)
-        win = lineEditDemo()
-        win.show()
-        sys.exit(app.exec_())
