@@ -2,13 +2,16 @@ from PyQt5.QtWidgets import QApplication
 from PyQt5.QtGui import QIcon
 import sys
 
-import qlineedit, qpushbutton
+import qlineedit, qpushbutton, qtextedit, qlabel
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     # win = qlineedit.lineEditDemo()
     # win = qpushbutton.PushButton()
-    win = qpushbutton.ToolButton()
+    # win = qpushbutton.ToolButton()
+    # win = qtextedit.TextEditDemo()
+    # win = qlabel.QLabelDemo()
+    win = qlabel.QLabelBuddy()
     win.show()
-    win.setWindowIcon(QIcon('favicon.png'))
+    win.setWindowIcon(QIcon('imgs/favicon.png'))
     sys.exit(app.exec_())
